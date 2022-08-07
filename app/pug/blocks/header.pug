@@ -1,0 +1,28 @@
+header
+    .call-pop(class="mfp-hide" id="call-popup")
+        .call-pop__wrapper 
+            h2 Call<br><span>now</span>
+            p Do you want to work with us?<br>Fill out the form and we will contact you as soon as possible.
+            form(action="" id="form-call" name="form") 
+                input(type="text" placeholder="Number" name="phone")
+                button(type="submit") Send
+    a.logo(href="/") 
+        img(src=img+"logo.svg", alt="")
+    input(type="checkbox" id="menu-bar")
+    label.main-menu-btn-icon(for="menu-bar") 
+    nav.navbar                                                     
+        ul 
+            li 
+                a(href="/") Home
+            li 
+                a(href="../about.html") About Us
+            li 
+                a(href="#") Equipment and accessories
+            li 
+                a(href="#") Services
+            li 
+                a(href="#") Contact
+    a.btn(href="#call-popup" id="call") Call now
+
+
+    

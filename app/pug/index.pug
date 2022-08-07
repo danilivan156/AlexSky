@@ -1,0 +1,192 @@
+- var img = 'img/';
+
+doctype
+html
+	include blocks/head.pug
+		title
+	body
+		.page-up__wrapper(id="page-up")
+			a.page-up(href="#up") 
+				.page-up__text To up
+		main.page-container(id="up")
+			section.grow
+				.grow__container
+					include blocks/header.pug
+					.text-pop__1(class="mfp-hide" id="text-popup-1")
+						h2 3,500 average per week
+						p $ 0.80 + / m, OTR lines<br>$ 0.90 + / m Team, Reefer, Flatbed<br>$ 1.00 / m Dedicated lines<br>$ 1.20 / m Hazmat freight<br>Possible rate $ 450 + per day or 32% + from gross
+					.text-pop__2(class="mfp-hide" id="text-popup-2")
+						h2 Layover $250
+						p Extra stop $70<br>detention $25/hr<br>DOT inspection $200
+					.text-pop__3(class="mfp-hide" id="text-popup3")
+						h2 3,500+
+						p Miles count zip-to-zip<br>Empty and laden miles cost the same<br>48 states<br>We recommend routes and refueling<br>We don’t go to Canada and in the snow, we don’t use chains.<br>No New York city
+					.text-pop__4(class="mfp-hide" id="text-popup-4")
+						h2 XXX
+						p CDL drivers, class A,<br>1099<br>Solo, Team<br>Dry Van, Reefer, Flatbed<br>No internship experience up to 6 months<br>Experience from 6 months, no crime<br>Terminal and Repair Shop in Chicago IL and Jacksonville FL<br>Orientation one day<br>Log Book support<br>Russian-speaking dispatchers 24/7
+					.text-pop__5(class="mfp-hide" id="text-popup-5")
+						h2 Truck purchase program<br>for our drivers
+						p We support our drivers.<br>Lease the van with no up-front down payment cash.<br>Zero dollars down. <br>We provide confirmation from the broker.<br>90% from gross.
+					.thanks-pop(class="mfp-hide" id="thanks-popup")
+						.thanks-pop__wrapper
+							h2 Thanks<br>you
+							p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo tellus sem, eget cursus elit bibendum vitae.
+							a.btn(href="#") Ok
+					.grow__main(class="flex")
+						.grow__text 
+							.grow__heading
+								h1 Grow with the <span>right company</span>
+								.sub-h1 Grow with the right company
+							p If you are looking for a well-paid job and great professional team, then do not hesitate to contact us!<br> We are waiting for you!
+							.grow__btns 
+								a.btn(href="#apply-popup" id="apply" class="btn-full") Apply now
+								.apply-pop(class="mfp-hide" id="apply-popup")
+									.apply-pop__wrapper 
+										h2 apply <br><span>now</span>
+										p Become a member of our professional team! Fill up the form and we will contact you as soon as possible.
+										form(action="" id="form-apply" name="form") 
+											input(type="text" placeholder="Name" name="name")
+											input(type="text" placeholder="Phone number" name="phone")
+											input(type="text" placeholder="E-mail" name="email")
+											textarea(name="message", cols="30", rows="10", placeholder="Message")
+											button(type="submit") Send
+								a.btn(href="#thanks-popup" id="thanks") Learn more
+						.grow__images
+							<iframe src="https://www.youtube.com/embed/yhS9LnDoo_w?controls=0&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:-20px;bottom:0;margin:auto}span>img{width:145px;height:145px;}span{height:100%;display:flex;justify-content:center;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/yhS9LnDoo_w?autoplay=1&controls=0&rel=0;><span><img src=../img/Vector.svg></span></a>"></iframe>
+							//img(src=img+"video.png", alt="")
+							//a(href="#")
+								img.grow__images-absolute(src=img+"Vector.svg", alt="")
+			section.about 
+				.about__text-absolut alex sky
+				.about__container(class="flex")
+					img(src=img+"img (1).png", alt="")
+					.about__text 
+						h2 ABOUT <span>US</span>
+						p Welcome to Alex Sky! Every day our drivers deliver loads all over the 48 States. Safety and comfort of our drivers are very important for us, that is why we have new new Freightliner Cascadia trucks 2019 - 2021 years, automatic transmission, track speed open at 73 mph.<br><br><br>The most valuable asset of our company are drivers. We know that without them we wouldn't have achieved our goals. That is why we care about our drivers a lot! We do not send our drivers to crowded cities like New York and drive in snow.<br><br>Join our team today and get the best bonuses. We can provide all what you need for comfortable work and even more! We will do everything we can to make your transition to our company smooth and easy. We will discuss with you a schedule that meets your expectations and salary which fits your qualifications. Become an important part of the best team!
+						a(href="#") Learn more <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_162_275)"><path d="M2.11914 1.37367L6.20212 5L2.11914 8.62633L3.66579 10L9.29542 5L3.66579 -6.00451e-08L2.11914 1.37367Z" fill="#FFC71A"/></g><defs><clipPath id="clip0_162_275"><rect width="10" height="11.2593" fill="white" transform="translate(0.0742188 10) rotate(-90)"/></clipPath></defs></svg>
+			section.choose 
+				.choose__container 
+					h2 CHOOSE <span>ALEX SKY!</span>
+					.choose__blocks(class="flex")
+						.choose__block 
+							h4 3,500+ miles per week 
+							p <span>Welcome drivers</span> CDL drivers, class A, Solo Team,<br>  1099<br><span>We hiring drivers with experience and without</span><br>Terminal and Repair Shop in Chicago IL and<br> Jacksonville FL <br>Orientation one day <br>Log Book support<br>Russian-speaking dispatchers 24/7
+						.choose__block 
+							h4 Equipment and<br> accessories
+							p.dop If you do not have experience contact us and we will discuss possible opportunities for you in our company.
+						.choose__block 
+							h4 Truck purchase program for our drivers<br>Program which allows you to buy<br> your own truck with our support
+							ul 
+								li We support our drivers.
+								li Lease the truck with no up-front down payment cash.
+								li Zero dollars down.
+								li We provide confirmation from the broker.
+								li 90% from gross.
+			section.why 
+				img(src=img+"why.png", alt="", class="why-absolute")
+				.why__container 
+					h2 Why <span>alex sky?</span>
+					.why__blocks(class="flex")
+						.why__block 
+							img(src=img+"why-1.png", alt="")
+							h4 Flexible <br>schedule 
+							p We understand our drivers and help them determine their free time
+						.why__block 
+							img(src=img+"why-2.png", alt="")
+							h4 Great<br>Benefits
+							p We appreciate our truck drivers and pay well for their job.We raise salary and benefits for good work
+						.why__block 
+							img(src=img+"why-3.png", alt="")
+							h4 Full stuffed<br>office
+							p Experienced dispatchers who talk Russian and English will help you out 24/7. Who help you all the way along the route
+						.why__block 
+							img(src=img+"why-4.png", alt="")
+							h4 Terminal<br>shop
+							p We have terminal and repair shops in Chicago, Illinois and Jacksonville, Florida
+			section.rewies 
+				.rewies__container
+					h2 What do our drivers <span>say about us?</span>
+				.container__fluid
+					.swiper__container
+						.swiper
+							.swiper-wrapper
+								.swiper-slide 
+									.rewies__row(class="flex")
+										.rewies__name Alex
+										img(src=img+"quotes.svg", alt="")
+									p In Alex Sky I feel very supported in all that I do. Salary is good as well as bonuses. Company is very safety oriented, which is very important for me and my family. I would highly recommend them.
+									.rewies__date 1.09.2021
+								.swiper-slide 
+									.rewies__row(class="flex")
+										.rewies__name John
+										img(src=img+"quotes.svg", alt="")
+									p Highly recommend Alex Sky. They treat their drivers with respect and have a great dispatch team. Working there means working in a stable company. I had only a positive experience with Alex Sky. This job takes a lot of effort, but the company pays well for it. They respect family time at home and for them you are not a number, they know your name. I really appreciate what the company is doing for me. Thanks!
+									.rewies__date 11.10.2021
+								.swiper-slide 
+									.rewies__row(class="flex")
+										.rewies__name William
+										img(src=img+"quotes.svg", alt="")
+									p I have been working at Alex Sky for several months now, so far everything is fine. In the company all workers are professionals and responsible people. The dispatch office works 24/7, you can call them any time. All vans checked on time and are in good condition. I have gained stability, reliability and new friends here! I definitely recommend this company!
+									.rewies__date 27.11.21
+								.swiper-slide 
+									.rewies__row(class="flex")
+										.rewies__name Alex
+										img(src=img+"quotes.svg", alt="")
+									p In Alex Sky I feel very supported in all that I do. Salary is good as well as bonuses. Company is very safety oriented, which is very important for me and my family. I would highly recommend them.
+									.rewies__date 1.09.2021
+					.swiper-button-prev <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.0303 16.7186L8.96961 17.7793L0.189279 8.99897L8.96961 0.218635L10.0303 1.2793L2.31119 8.99897L10.0303 16.7186Z" fill="#020203"/></svg>
+					.swiper-button-next <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.969727 1.28136L2.03039 0.220703L10.8107 9.00103L2.03039 17.7814L0.969727 16.7207L8.68881 9.00103L0.969727 1.28136Z" fill="#020203"/></svg>
+			section.bonus 
+				.bonus__container 
+					h2 our<span>bonus<br>(SIGN IN $2,000 AND MORE)</span>
+					.bonus__blocks(class="flex") 
+						.bonus__item-left
+							h6 Sign in bonus $2,000
+							p In hope for long and productive cooperation
+							.line
+							h6 Referral bonus $2,000
+							p Your recommendation is very important to us that's why we very thankful when drivers help us grow our fleet by referring another great driver to our company
+							.line
+							h6 Health, dental, visual, disability insurance
+							p Healthy drivers are our priority, that's why we take care of you in all possible ways
+							.line
+							h6 Extra Safety & Loyalty bonus
+							p Alex Sky always ensures safety of our drivers and provides rewards to workers for safe behavior
+							.line
+						.bonus__item-right
+							p We appreciate our drivers and are willing to provide the best conditions to them. That's why we provide paid vacation and paid parking near your home, so that you do not need to worry where to park your truck on your free days. We take care of your expenses so that you can earn and save more, all transit expenses to work and hotel are on us.<br>Alex Sky will always help you to avoid stress on the way to our company. We organize transit to our work location to make it easier and more comfortable for you.
+			section.offer 
+				.offer__container
+					.offer__heading(class="flex")
+						h2 what <span>we offer?</span>
+						.offer__heading-text 
+							h3 3,500 AVERAGE PER WEEK
+							p Increase in pay for stabile work
+					h4 ADDITIONAL COMPENSATION
+					.line
+					.offer__text(class="flex")
+						.offer__text-left
+							p We pay 
+							ul 
+								li $250 for Layover caused by the dispatcher's fault,
+								li $70 for extra stop if you have a lot of loading and unloading of trucks,
+								li $25/hr for detention within long hours of loading and unloading of trucks and 
+								li $200 for successful pass of DOT inspection.
+							.offer__text-left-dop Join us today!
+						.offer__text-right
+							ul 
+								li We pay our drivers zip to zip, which means that all miles paid the same. 
+								li We provide special conditions for our best workers,
+								li With us it is possible to drive at a rate $450+ per day or 32%+ from gross. 
+								li We are ready to pay more for constant and quality work! 
+			section.form 
+				form(action="" id="form-main" name="form")
+					input(type="text" placeholder="Name" name="name")
+					input(type="text" placeholder="Email" name="email") 
+					input(type="text" placeholder="Phone number" name="pjone") 
+					textarea(name="message", cols="30", rows="10", placeholder="Message")
+					button(type="sybmit") Contact us
+				img(src=img+"image 34.png", alt="")
+
+		include blocks/footer.pug
+		include blocks/scripts.pug

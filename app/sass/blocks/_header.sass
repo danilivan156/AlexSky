@@ -1,0 +1,261 @@
+header
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-top: 55px
+    padding-bottom: 141px
+    .navbar
+        margin-left: 106px
+    .logo
+        img
+            max-width: 195px
+            width: 100%
+    .btn
+        background: inherit
+        border: 2px solid $yellow
+        max-width: 153px
+        color: $yellow
+
+header .navbar ul
+    list-style: none
+
+header .navbar ul li
+    position: relative
+    float: left
+
+header .navbar ul li a
+    font-size: 22px
+    line-height: 28px
+    padding: 0 9.5px
+    color: white
+    display: block
+
+header .navbar ul li ul
+    position: absolute
+    left: 0
+    width: 200px
+    background: white
+    display: none
+
+header .navbar ul li ul li
+    width: 100%
+    border-top: 1px solid rgba(0,0,0,.1)
+
+header .navbar ul li ul li ul
+    left: 200px
+    top: 0
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul
+    display: initial
+
+#menu-bar
+    display: none
+
+header label
+    font-size: 20px
+    color: #333
+    cursor: pointer
+    display: none
+
+.main-menu-btn-icon,
+.main-menu-btn-icon:before,
+.main-menu-btn-icon:after
+    position: absolute
+    right: 200px
+    height: 4px
+    width: 30px
+    background: $yellow
+    -webkit-transition: all 0.25s
+    transition: all 0.25s
+
+.main-menu-btn-icon:before
+    content: ''
+    top: -10px
+    left: 0
+
+.main-menu-btn-icon:after
+    content: ''
+    top: 10px
+    left: 0
+
+#menu-bar:checked ~ .main-menu-btn-icon
+    height: 0
+    background: inherit
+    -webkit-transition: all 0.5s
+    transition: all 0.5s
+
+#menu-bar:checked ~ .main-menu-btn-icon:before
+    transform: rotate(-45deg)
+    top: 0
+    -webkit-transition: all 0.5s
+    transition: all 0.5s
+
+#menu-bar:checked ~ .main-menu-btn-icon:after
+    top: 0
+    transform: rotate(45deg)
+    -webkit-transition: all 0.5s
+    transition: all 0.5s
+
+header .navbar ul li .drop:after
+    content: ''
+    display: block
+    position: absolute
+    right: 0px
+    top: 42%
+    width: 0
+    height: 0
+    border-left: 6px solid transparent
+    border-right: 6px solid transparent
+    border-top: 10px solid #333
+    border-bottom: 0px solid transparent
+
+header .navbar ul li ul li .drop:after
+    content: ''
+    display: block
+    position: absolute
+    right: 20px
+    top: 42%
+    width: 0
+    height: 0
+    border-left: 6px solid transparent
+    border-right: 6px solid transparent
+    border-top: 10px solid #333
+    border-bottom: 0px solid transparent
+
+header .navbar ul li ul li:focus-within > .drop:after,
+header .navbar ul li ul li:active > .drop:after,
+header .navbar ul li ul li:target > .drop:after,
+header .navbar ul li ul li:hover > .drop:after
+    content: ''
+    display: block
+    position: absolute
+    right: 20px
+    top: 42%
+    width: 0
+    height: 0
+    border-left: 6px solid transparent
+    border-right: 6px solid transparent
+    border-top: 10px solid white
+    border-bottom: 0px solid transparent
+
+@media(max-width: 1024px)
+    header 
+        padding: 10px
+        label
+            display: initial
+    header .navbar
+        z-index: 1
+        max-height: 650px
+        overflow: auto
+        position: absolute
+        top: 130px
+        left: 0
+        right: 0
+        background: #020203
+        border-top: 1px solid rgba(0,0,0,.1)
+        display: none
+
+    header .navbar ul li
+        width: 100%
+
+    header .navbar ul li ul
+        position: relative
+        width: 100%
+
+    header .navbar ul li ul li
+        background: white
+
+    header .navbar ul li ul li a
+        padding-left: 45px
+
+    header .navbar ul li a
+        color: $yellow
+        padding: 10px
+
+    header .navbar ul li ul li:before
+        content: ''
+        display: block
+        position: absolute
+        width: 15px
+        height: 2.5px
+        left: 20px
+        top: 50%
+        background: #333
+
+    header .navbar ul li ul li ul
+        width: 100%
+        left: 0
+
+    #menu-bar:checked ~ .navbar
+        display: initial
+
+    header .navbar ul li .drop:after
+        content: ''
+        display: block
+        position: absolute
+        right: 20px
+        top: 33%
+        width: 0
+        height: 0
+        border-left: 10px solid transparent
+        border-right: 10px solid transparent
+        border-top: 15px solid #333
+        border-bottom: 0px solid transparent
+
+    header .navbar ul li ul li .drop:after
+        content: ''
+        display: block
+        position: absolute
+        right: 20px
+        top: 33%
+        width: 0
+        height: 0
+        border-left: 10px solid transparent
+        border-right: 10px solid transparent
+        border-top: 15px solid #333
+        border-bottom: 0px solid transparent
+
+    header .navbar ul li:focus-within > .drop:after,
+    header .navbar ul li:active > .drop:after,
+    header .navbar ul li:target > .drop:after,
+    header .navbar ul li:hover > .drop:after
+        content: ''
+        display: block
+        position: absolute
+        right: 20px
+        top: 13%
+        width: 0
+        height: 0
+        border-left: 10px solid transparent
+        border-right: 10px solid transparent
+        border-top: 15px solid white
+        border-bottom: 0px solid transparent
+
+    header .navbar ul li ul li:focus-within > .drop:after,
+    header .navbar ul li ul li:active > .drop:after,
+    header .navbar ul li ul li:target > .drop:after,
+    header .navbar ul li ul li:hover > .drop:after
+        content: ''
+        display: block
+        position: absolute
+        right: 20px
+        top: 10%
+        width: 0
+        height: 0
+        border-left: 10px solid transparent
+        border-right: 10px solid transparent
+        border-top: 15px solid white
+        border-bottom: 0px solid transparent
+@media(max-width: 767px)
+    header .navbar
+        top: 70px
+@media(max-width: 413px)
+    header .navbar
+        max-height: 600px
+        overflow: auto
+
+@media(max-width: 320px)
+    header .navbar
+        max-height: 500px
+        overflow: auto
